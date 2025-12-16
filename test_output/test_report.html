@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Deviation Report</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
+.observed { color: green; }
+.deviation { color: red; }
+</style>
+</head>
+<body>
+<h1>Deviation Report</h1>
+<p>Generated: 2025-12-16 06:12:07</p>
+<h2>Summary</h2>
+<ul>
+<li><strong>Total Steps:</strong> 4</li>
+<li><strong>Observed:</strong> 2</li>
+<li><strong>Deviations:</strong> 2</li>
+</ul>
+<h2>Detailed Results</h2>
+<table>
+<tr><th>Step Description</th><th>Result</th><th>Notes</th></tr>
+<tr class='observed'>
+<td>Navigate to https://wrangler.in and validate homepage load and readiness, reporting any popups.</td>
+<td>☑ Observed</td>
+<td>Observed at 00:05</td>
+</tr>
+<tr class='observed'>
+<td>Click the Search icon on the Wrangler homepage and validate that the search bar appears and is ready for input.</td>
+<td>☑ Observed</td>
+<td>Observed at 00:12</td>
+</tr>
+<tr class='deviation'>
+<td>Enter 'Rainbow sweater' in the search bar and validate that relevant search results appear.</td>
+<td>✗ Deviation</td>
+<td>Partial match (score: 0.38)</td>
+</tr>
+<tr class='deviation'>
+<td>Apply the 'Turtle Neck' filter in the Neck filter section and validate that the results update accordingly.</td>
+<td>✗ Deviation</td>
+<td>Step skipped in video</td>
+</tr>
+</table>
+</body>
+</html>

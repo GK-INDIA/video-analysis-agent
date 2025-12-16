@@ -1,7 +1,18 @@
 [project]
 name = "video-analysis-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "Video Analysis Agent that evaluates whether a Hercules test run was executed as planned by comparing planning logs, video evidence, and test outputs"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "pyautogen>=0.2.0",
+    "opencv-python>=4.8.0",
+    "pillow>=10.0.0",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=4.9.0",
+    "openai>=1.0.0",
+    "pydantic>=2.0.0",
+    "rich>=13.0.0",
+    "python-dotenv>=1.0.0",
+    "autogen>=0.10.2",
+]
