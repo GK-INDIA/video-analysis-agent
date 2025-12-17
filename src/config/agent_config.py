@@ -12,6 +12,7 @@ load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_BASE_URL = "https://api.groq.com/openai/v1"
 GROQ_MODEL = "openai/gpt-oss-120b"
+GROQ_VISION_MODEL = "llama-3.2-11b-vision-preview"
 
 # Validate API key is set
 if not GROQ_API_KEY:
@@ -43,3 +44,9 @@ def get_llm_config_with_client():
         "model": GROQ_MODEL,
         "client": groq_client,
     }
+
+
+# Vision Model Configuration
+def get_vision_model():
+    """Get vision model name for Groq API."""
+    return GROQ_VISION_MODEL
